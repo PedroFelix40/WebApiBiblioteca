@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebApiBiblioteca.Domains;
 
 namespace WebApiBiblioteca.Context
 {
@@ -10,8 +11,19 @@ namespace WebApiBiblioteca.Context
         public BiblioTechContext(DbContextOptions<BiblioTechContext> options)
             : base(options)
         {
-            
         }
+
+        public DbSet<EmprestimosLivro> EmprestimosLivro { get; set; }
+
+        public DbSet<Generos> Generos { get; set; }
+
+        public DbSet<Livros> Livros { get; set; }
+
+        public DbSet<Resenhas> Resenhas { get; set; }
+
+        public DbSet<TiposUsuario> TiposUsuario { get; set; }
+
+        public DbSet<Usuarios> Usuarios { get; set; }
 
 
         // String de conexão

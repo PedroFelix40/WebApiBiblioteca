@@ -1,14 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\",
+  "WorkspaceRootPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\context\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:context\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\context\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:context\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\emprestimoslivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\emprestimoslivro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\resenhas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\resenhas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\tiposusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\tiposusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\generos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\domains\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:domains\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA382E7-24B0-4CEA-8472-95655C682193}|WebApiBiblioteca.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +42,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAsAAABYAAAA",
+              "DocumentIndex": 5,
+              "Title": "Generos.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Generos.cs",
+              "RelativeDocumentMoniker": "Domains\\Generos.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Generos.cs",
+              "RelativeToolTip": "Domains\\Generos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T18:21:52.53Z",
+              "WhenOpened": "2024-05-29T19:34:00.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Livros.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Livros.cs",
+              "RelativeDocumentMoniker": "Domains\\Livros.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Livros.cs",
+              "RelativeToolTip": "Domains\\Livros.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T19:33:44.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resenhas.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Resenhas.cs",
+              "RelativeDocumentMoniker": "Domains\\Resenhas.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Resenhas.cs",
+              "RelativeToolTip": "Domains\\Resenhas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T19:33:38.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BiblioTechContext.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\Context\\BiblioTechContext.cs",
-              "RelativeDocumentMoniker": "Context\\BiblioTechContext.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\Context\\BiblioTechContext.cs",
-              "RelativeToolTip": "Context\\BiblioTechContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "Title": "EmprestimosLivro.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\EmprestimosLivro.cs",
+              "RelativeDocumentMoniker": "Domains\\EmprestimosLivro.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\EmprestimosLivro.cs",
+              "RelativeToolTip": "Domains\\EmprestimosLivro.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwBQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T19:33:31.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Domains\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\Usuarios.cs",
+              "RelativeToolTip": "Domains\\Usuarios.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAzwBcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T19:33:16.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TiposUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\TiposUsuario.cs",
+              "RelativeDocumentMoniker": "Domains\\TiposUsuario.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Domains\\TiposUsuario.cs",
+              "RelativeToolTip": "Domains\\TiposUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T19:33:08.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "",
+              "WhenOpened": "2024-05-29T18:21:52.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BiblioTechContext.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Context\\BiblioTechContext.cs",
+              "RelativeDocumentMoniker": "Context\\BiblioTechContext.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\Context\\BiblioTechContext.cs",
+              "RelativeToolTip": "Context\\BiblioTechContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "OverriddenGroupName": "Context",
               "WhenOpened": "2024-05-29T18:17:31.21Z",
               "EditorCaption": ""
             }
