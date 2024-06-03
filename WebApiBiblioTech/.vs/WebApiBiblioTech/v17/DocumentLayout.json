@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\controllers\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:controllers\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\repositories\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:repositories\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:repositories\\generorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|c:\\users\\predo gabirel\\desktop\\projetos\\webapibiblioteca\\webapibibliotech\\controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBFD9B4A-100A-459B-93A1-8A5988370C8B}|WebApiBiblioTech.csproj|solutionrelative:controllers\\generocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAqwBUAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T14:04:53.199Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:04:53.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:02:58.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUsuario.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "Interfaces\\IUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:01:11.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TipoUsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\TipoUsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TipoUsuarioController.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\TipoUsuarioController.cs",
+              "RelativeToolTip": "Controllers\\TipoUsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAChAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T14:14:37.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\TipoUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TipoUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\TipoUsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\TipoUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T14:10:38.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GeneroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\GeneroRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\GeneroRepository.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Repositories\\GeneroRepository.cs",
+              "RelativeToolTip": "Repositories\\GeneroRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T13:55:32.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GeneroController.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\GeneroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\Projetos\\WebApiBiblioteca\\WebApiBiblioTech\\Controllers\\GeneroController.cs",
+              "RelativeToolTip": "Controllers\\GeneroController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T13:55:24.223Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
