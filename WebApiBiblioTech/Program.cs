@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using WebApiBiblioTech.Contexts;
-using WebApiBiblioTech.Interfaces;
-using WebApiBiblioTech.Repositories;
+using webapibibliotech.Contexts;
+using webapibibliotech.Interfaces;
+using webapibibliotech.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,15 +12,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Configuração da program
 
+// Configurações do BD
 builder.Services.AddDbContext<BiblioTechContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Injeção de dependencia
 builder.Services.AddScoped<IGenero, GeneroRepository>();
 builder.Services.AddScoped<ITipoUsuario, TipoUsuarioRepository>();
 builder.Services.AddScoped<IUsuario, UsuarioRepository>();
-
+builder.Services.AddScoped<IEmprestimo, EmprestimoRepository>();
 
 var app = builder.Build();
 

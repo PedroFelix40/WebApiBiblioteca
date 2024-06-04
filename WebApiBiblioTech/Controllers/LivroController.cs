@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiBiblioTech.Controllers
+namespace webapibibliotech.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -9,3 +9,4 @@ namespace WebApiBiblioTech.Controllers
     {
     }
 }
+

@@ -1,8 +1,8 @@
-﻿using WebApiBiblioTech.Contexts;
-using WebApiBiblioTech.Domains;
-using WebApiBiblioTech.Interfaces;
+﻿using webapibibliotech.Contexts;
+using webapibibliotech.Domains;
+using webapibibliotech.Interfaces;
 
-namespace WebApiBiblioTech.Repositories
+namespace webapibibliotech.Repositories
 {
     public class GeneroRepository : IGenero
     {
@@ -73,7 +73,7 @@ namespace WebApiBiblioTech.Repositories
             {
 
                 throw;
-            }          
+            }
         }
     }
 }

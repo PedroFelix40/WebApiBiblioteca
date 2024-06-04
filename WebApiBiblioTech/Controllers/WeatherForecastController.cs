@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiBiblioTech.Controllers
+namespace webapibibliotech.Controllers
 {
     [ApiController]
     [Route("[controller]")]

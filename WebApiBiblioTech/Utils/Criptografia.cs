@@ -1,13 +1,12 @@
-﻿namespace WebApiBiblioTech.Utils
+﻿namespace webapibibliotech.Utils
 {
-    public static class Criptografia
+    public class Criptografia
     {
         /// <summary>
         /// Gera uma hash a partir de uma senha 
         /// </summary>
         /// <param name="senha">senha que receberá a hash</param>
         /// <returns>senha criptografada com a hash</returns>
-        
         public static string GerarHash(string senha)
         {
             return BCrypt.Net.BCrypt.HashPassword(senha);

@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using webapibibliotech.Domains;
 
-namespace WebApiBiblioTech.Domains
+namespace webapibibliotech.Domains
 {
     [Table("Livros")]
     public class Livros
@@ -29,15 +30,15 @@ namespace WebApiBiblioTech.Domains
         [Required(ErrorMessage = "O ISBN do livro é obrigatório!")]
         [StringLength(60, MinimumLength = 10, ErrorMessage = "A senha deve conter entre 5 e 30 caracteres.")]
         public string? ISBN { get; set; }
-        
+
         public string? Capa { get; set; }
 
-        // foreing key
+        // FK
         [Required(ErrorMessage = "O gênero do livro é obrigatório!")]
         public Guid IDGenero { get; set; }
 
 
-        [ForeignKey("IDGenero")] // plural = entidade / singular = atributo
+        [ForeignKey("IDGenero")]
         public Generos? Genero { get; set; }
     }
 }

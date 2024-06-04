@@ -3,7 +3,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApiBiblioTech.Domains
+namespace webapibibliotech.Domains
 {
     [Table("TiposUsuario")]
     public class TiposUsuario

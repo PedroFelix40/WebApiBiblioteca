@@ -1,6 +1,0 @@
-@WebApiBiblioTech_HostAddress = http://localhost:5226
-
-GET {{WebApiBiblioTech_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\WebApiBiblioTech.csproj": {}
+    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\WebApiBiblioTech.csproj": {
+    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\WebApiBiblioTech.csproj",
-        "projectName": "WebApiBiblioTech",
-        "projectPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\WebApiBiblioTech.csproj",
+        "projectUniqueName": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
+        "projectName": "webapibibliotech",
+        "projectPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
         "packagesPath": "C:\\Users\\48746019871\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\obj\\",
+        "outputPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -47,34 +47,34 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "BCrypt.Net-Next": {
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[7.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.VisualStudio.LiveShare": {
-              "target": "Package",
-              "version": "[1.1.57, )"
+              "version": "[7.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -88,6 +88,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -96,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

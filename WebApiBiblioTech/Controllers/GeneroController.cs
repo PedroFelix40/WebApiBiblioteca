@@ -1,27 +1,27 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WebApiBiblioTech.Domains;
-using WebApiBiblioTech.Interfaces;
-using WebApiBiblioTech.Repositories;
+using webapibibliotech.Interfaces;
+using webapibibliotech.Domains;
 
-namespace WebApiBiblioTech.Controllers
+namespace webapibibliotech.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
     public class GeneroController : ControllerBase
     {
         private IGenero _genero;
 
-        // Injeção de dependencia
+        // Injeção
         public GeneroController(IGenero genero)
         {
-            _genero = genero ?? throw new ArgumentNullException(nameof(genero)); // Validação para conferir se a instância de IGenero é != de null
+            _genero = genero ?? throw new ArgumentNullException(nameof(genero)); // validação para conferir se a instância de IGenero é != de null
         }
 
         // Métodos
 
         [HttpGet("BuscarPorId/{id}")]
-        public IActionResult GetById(Guid id) 
+        public IActionResult GetById(Guid id)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace WebApiBiblioTech.Controllers
             {
                 _genero.CadastrarGenero(genero);
 
-                return Ok(genero); 
+                return Ok(genero);
             }
             catch (Exception e)
             {
@@ -50,8 +50,8 @@ namespace WebApiBiblioTech.Controllers
             }
         }
 
-        [HttpDelete("/{id}")]
-        public IActionResult Delete(Guid id) 
+        [HttpDelete("DeletarPorId/{id}")]
+        public IActionResult Delete(Guid id)
         {
             try
             {
@@ -63,20 +63,20 @@ namespace WebApiBiblioTech.Controllers
 
                     return Ok("O genero foi deletado");
                 }
-                else {
-                    return NotFound("Não foi encontrado nenhum genero com esse ID");
+                else
+                {
+                    return NotFound("Não foi encontrado nenhum gênero com esse ID");
                 }
-                
+
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
         [HttpGet("ListarGeneros")]
-        public IActionResult Get() 
+        public IActionResult Get()
         {
             try
             {
@@ -84,7 +84,6 @@ namespace WebApiBiblioTech.Controllers
             }
             catch (Exception e)
             {
-
                 return BadRequest(e.Message);
             }
         }

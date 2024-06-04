@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApiBiblioTech.Contexts;
+using webapibibliotech.Contexts;
 
 #nullable disable
 
-namespace WebApiBiblioTech.Migrations
+namespace webapibibliotech.Migrations
 {
     [DbContext(typeof(BiblioTechContext))]
     partial class BiblioTechContextModelSnapshot : ModelSnapshot
@@ -17,12 +17,12 @@ namespace WebApiBiblioTech.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.6")
+                .HasAnnotation("ProductVersion", "7.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.EmprestimosLivro", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.EmprestimosLivro", b =>
                 {
                     b.Property<Guid>("IDEmprestimoLivro")
                         .ValueGeneratedOnAdd()
@@ -50,7 +50,7 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("EmprestimosLivro");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Generos", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Generos", b =>
                 {
                     b.Property<Guid>("IDGenero")
                         .ValueGeneratedOnAdd()
@@ -65,7 +65,7 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("Generos");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Livros", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Livros", b =>
                 {
                     b.Property<Guid>("IDLivro")
                         .ValueGeneratedOnAdd()
@@ -105,7 +105,7 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("Livros");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Resenhas", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Resenhas", b =>
                 {
                     b.Property<Guid>("IDResenha")
                         .ValueGeneratedOnAdd()
@@ -133,7 +133,7 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("Resenhas");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.TiposUsuario", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.TiposUsuario", b =>
                 {
                     b.Property<Guid>("IDTipoUsuario")
                         .ValueGeneratedOnAdd()
@@ -148,7 +148,7 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("TiposUsuario");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Usuarios", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Usuarios", b =>
                 {
                     b.Property<Guid>("IdUsuario")
                         .ValueGeneratedOnAdd()
@@ -180,15 +180,15 @@ namespace WebApiBiblioTech.Migrations
                     b.ToTable("Usuarios");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.EmprestimosLivro", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.EmprestimosLivro", b =>
                 {
-                    b.HasOne("WebApiBiblioTech.Domains.Livros", "Livro")
+                    b.HasOne("webapibibliotech.Domains.Livros", "Livro")
                         .WithMany()
                         .HasForeignKey("IDLivro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebApiBiblioTech.Domains.Usuarios", "Usuario")
+                    b.HasOne("webapibibliotech.Domains.Usuarios", "Usuario")
                         .WithMany()
                         .HasForeignKey("IDUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -199,9 +199,9 @@ namespace WebApiBiblioTech.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Livros", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Livros", b =>
                 {
-                    b.HasOne("WebApiBiblioTech.Domains.Generos", "Genero")
+                    b.HasOne("webapibibliotech.Domains.Generos", "Genero")
                         .WithMany()
                         .HasForeignKey("IDGenero")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -210,15 +210,15 @@ namespace WebApiBiblioTech.Migrations
                     b.Navigation("Genero");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Resenhas", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Resenhas", b =>
                 {
-                    b.HasOne("WebApiBiblioTech.Domains.Livros", "Livro")
+                    b.HasOne("webapibibliotech.Domains.Livros", "Livro")
                         .WithMany()
                         .HasForeignKey("IDLivro")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebApiBiblioTech.Domains.Usuarios", "Usuario")
+                    b.HasOne("webapibibliotech.Domains.Usuarios", "Usuario")
                         .WithMany()
                         .HasForeignKey("IDUsuario")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -229,9 +229,9 @@ namespace WebApiBiblioTech.Migrations
                     b.Navigation("Usuario");
                 });
 
-            modelBuilder.Entity("WebApiBiblioTech.Domains.Usuarios", b =>
+            modelBuilder.Entity("webapibibliotech.Domains.Usuarios", b =>
                 {
-                    b.HasOne("WebApiBiblioTech.Domains.TiposUsuario", "TipoUsuario")
+                    b.HasOne("webapibibliotech.Domains.TiposUsuario", "TipoUsuario")
                         .WithMany()
                         .HasForeignKey("IDTipoUsuario")
                         .OnDelete(DeleteBehavior.Cascade)

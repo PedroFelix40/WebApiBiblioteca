@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApiBiblioTech.Domains;
+using webapibibliotech.Domains;
 
-namespace WebApiBiblioTech.Contexts
+namespace webapibibliotech.Contexts
 {
     public class BiblioTechContext : DbContext
     {
@@ -13,7 +13,7 @@ namespace WebApiBiblioTech.Contexts
         public BiblioTechContext(DbContextOptions<BiblioTechContext> options)
             : base(options)
         {
-            
+
         }
 
         public DbSet<EmprestimosLivro> EmprestimosLivro { get; set; }
@@ -28,8 +28,8 @@ namespace WebApiBiblioTech.Contexts
 
         public DbSet<Usuarios> Usuarios { get; set; }
 
-        string StringConexaoSenai = "Data Source=NOTE06-S21\\SQLEXPRESS; initial catalog=BiblioTech; TrustServerCertificate=true; user Id = sa; pwd=Senai@134";
-        string StringConexaoCasa = "Data Source=DESKTOP-1CNOHAQ\\SQLEXPRESS; initial catalog=BiblioTech; TrustServerCertificate=true; user Id = sa; pwd=2502";
+        private readonly string StringConexaoSenai = "Data Source=NOTE06-S21\\SQLEXPRESS; initial catalog=BiblioTech; TrustServerCertificate=true; user Id = sa; pwd=Senai@134";
+        //private readonly string StringConexaoCasa = "Data Source=DESKTOP-1CNOHAQ\\SQLEXPRESS; initial catalog=BiblioTech; TrustServerCertificate=true; user Id = sa; pwd=2502";
 
         // StringConexao
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

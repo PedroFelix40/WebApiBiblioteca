@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using webapibibliotech.Domains;
 
-namespace WebApiBiblioTech.Domains
+namespace webapibibliotech.Domains
 {
     [Table("Resenhas")]
     public class Resenhas
@@ -22,7 +23,7 @@ namespace WebApiBiblioTech.Domains
         public Guid IDUsuario { get; set; }
 
         [ForeignKey("IDUsuario")]
-        public Usuarios? Usuario { get; set; } // definição "usuario" sei la por que
+        public Usuarios? Usuario { get; set; }
 
 
         //ref Livro

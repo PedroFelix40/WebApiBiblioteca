@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApiBiblioTech.Contexts;
-using WebApiBiblioTech.Domains;
-using WebApiBiblioTech.Interfaces;
+using webapibibliotech.Contexts;
+using webapibibliotech.Domains;
+using webapibibliotech.Interfaces;
+using webapibibliotech.Utils;
 
-namespace WebApiBiblioTech.Repositories
+namespace webapibibliotech.Repositories
 {
     public class UsuarioRepository : IUsuario
     {
         private readonly BiblioTechContext _context;
-        
+
         public UsuarioRepository()
         {
             _context = new BiblioTechContext();
@@ -18,7 +19,23 @@ namespace WebApiBiblioTech.Repositories
         {
             try
             {
-                return _context.Usuarios.
+                Usuarios usuarioBuscado = _context.Usuarios.Select(u => new Usuarios 
+                {
+                    IdUsuario = u.IdUsuario,
+                    Nome = u.Nome,
+                    Email = u.Email,
+                    Senha = u.Senha,
+
+                    TipoUsuario = new TiposUsuario
+                    {
+                        IDTipoUsuario = u.IDTipoUsuario,
+                        TituloTipoUsuario = u.TipoUsuario!.TituloTipoUsuario
+                    }
+
+                }).FirstOrDefault(u => u.Email == email && u.Senha == senha)!;
+
+                return usuarioBuscado;
+
             }
             catch (Exception)
             {
@@ -44,6 +61,8 @@ namespace WebApiBiblioTech.Repositories
         {
             try
             {
+                usuario.Senha = Criptografia.GerarHash(usuario.Senha!);
+
                 _context.Usuarios.Add(usuario);
 
                 _context.SaveChanges();
@@ -59,7 +78,19 @@ namespace WebApiBiblioTech.Repositories
         {
             try
             {
-                return _context.Usuarios.Include(t => t.TipoUsuario).ToList();
+                return _context.Usuarios.Select( u =>  new Usuarios 
+                {
+                    IdUsuario = u.IdUsuario,
+                    Nome = u.Nome,
+                    Email = u.Email,
+                    Senha = u.Senha,
+
+                    TipoUsuario = new TiposUsuario
+                    {
+                        IDTipoUsuario = u.IDTipoUsuario,
+                        TituloTipoUsuario = u.TipoUsuario!.TituloTipoUsuario
+                    }
+                }).ToList();
             }
             catch (Exception)
             {

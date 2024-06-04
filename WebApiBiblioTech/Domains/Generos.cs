@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebApiBiblioTech.Domains
+namespace webapibibliotech.Domains
 {
     [Table("Generos")]
     public class Generos
@@ -13,6 +13,6 @@ namespace WebApiBiblioTech.Domains
         // column identificando o título do tipo de usuário
         [Column(TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "Genero é obrigatório!")]
-        public string? TituloGenero { get; set; } 
+        public string? TituloGenero { get; set; }
     }
 }

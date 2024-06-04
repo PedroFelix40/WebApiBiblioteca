@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebApiBiblioTech.Domains
+namespace webapibibliotech.Domains
 {
     [Table("EmprestimosLivro")]
     public class EmprestimosLivro
@@ -9,9 +9,9 @@ namespace WebApiBiblioTech.Domains
         [Key]
         public Guid IDEmprestimoLivro { get; set; } = Guid.NewGuid();
 
-        // Atributos
+        // atributos
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "A situação é obrigatório!")]    
+        [Required(ErrorMessage = "A situação é obrigatório!")]
         public string? Situacao { get; set; }
 
         [Column(TypeName = "DATE")]
@@ -20,12 +20,12 @@ namespace WebApiBiblioTech.Domains
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataDevolucao { get; set; }
 
-        // FK Usuario
+        // FK Usuário
         [Required(ErrorMessage = "O usuário é obrigatório!")]
         public Guid IDUsuario { get; set; }
 
 
-        [ForeignKey("IDUsuario")] // plural = entidade / singular = atributo
+        [ForeignKey("IDUsuario")] 
         public Usuarios? Usuario { get; set; }
 
         //ref Livro
@@ -34,7 +34,5 @@ namespace WebApiBiblioTech.Domains
 
         [ForeignKey("IDLivro")]
         public Livros? Livro { get; set; }
-
-
     }
 }

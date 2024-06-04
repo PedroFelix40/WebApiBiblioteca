@@ -1,6 +1,6 @@
-﻿using WebApiBiblioTech.Domains;
+﻿using webapibibliotech.Domains;
 
-namespace WebApiBiblioTech.Interfaces
+namespace webapibibliotech.Interfaces
 {
     public interface ITipoUsuario
     {
