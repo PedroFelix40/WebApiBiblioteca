@@ -6,8 +6,7 @@ namespace webapibibliotech.Interfaces
     {
         void Cadastrar(Livros livro);
         void Deletar(Guid id);
-        List<Livros> Listar();
-        List<Livros> ListarMeus(Guid id);
+        List<Livros> Listar();        
         Livros BuscarPorId(Guid id);
         void Atualizar(Guid id, Livros livro);
     }

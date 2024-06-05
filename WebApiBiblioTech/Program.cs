@@ -21,6 +21,8 @@ builder.Services.AddScoped<IGenero, GeneroRepository>();
 builder.Services.AddScoped<ITipoUsuario, TipoUsuarioRepository>();
 builder.Services.AddScoped<IUsuario, UsuarioRepository>();
 builder.Services.AddScoped<IEmprestimo, EmprestimoRepository>();
+builder.Services.AddScoped<ILivro, LivroRepository>();
+builder.Services.AddScoped<IResenha, ResenhaRepository>();
 
 var app = builder.Build();
 

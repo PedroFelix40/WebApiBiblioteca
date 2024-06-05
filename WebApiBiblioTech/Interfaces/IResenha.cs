@@ -8,6 +8,5 @@ namespace webapibibliotech.Interfaces
         void DeletarResenha(Guid id);
         List<Resenhas> Listar(Guid id);
         List<Resenhas> ListarCaralho();
-        Resenhas BuscarPorId(Guid id);
     }
 }

@@ -18,7 +18,7 @@ namespace webapibibliotech.Controllers
             _genero = genero ?? throw new ArgumentNullException(nameof(genero)); // validação para conferir se a instância de IGenero é != de null
         }
 
-        // Métodos
+        // Métodos"
 
         [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetById(Guid id)

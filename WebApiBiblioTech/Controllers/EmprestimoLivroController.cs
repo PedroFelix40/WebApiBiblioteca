@@ -17,6 +17,21 @@ namespace webapibibliotech.Controllers
             _emprestimo = emprestimo ?? throw new ArgumentNullException(nameof(emprestimo)); // validação para conferir se a instância de IGenero é != de null
         }
 
+        [HttpGet("BuscarPorId/{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            try
+            {
+                EmprestimosLivro emprestimosLivro = _emprestimo.BuscarPorId(id);
+
+                return Ok(emprestimosLivro);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
         [HttpPost]
         public IActionResult Post(EmprestimosLivro emprestimos)
         {
@@ -59,5 +74,21 @@ namespace webapibibliotech.Controllers
                 return BadRequest(e.Message);
             }
         }
+        
+        [HttpGet("ListarMeus/{id}")]
+        public IActionResult GetMy(Guid id)
+        {
+            try
+            {
+                List<EmprestimosLivro> meusL = _emprestimo.ListarMeus(id);
+
+                return Ok(meusL);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        
     }
 }

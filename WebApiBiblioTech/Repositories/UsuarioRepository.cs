@@ -32,10 +32,18 @@ namespace webapibibliotech.Repositories
                         TituloTipoUsuario = u.TipoUsuario!.TituloTipoUsuario
                     }
 
-                }).FirstOrDefault(u => u.Email == email && u.Senha == senha)!;
+                }).FirstOrDefault(u => u.Email == email)!;
 
-                return usuarioBuscado;
+                if (usuarioBuscado != null)
+                {
+                    bool confere = Criptografia.CompararHash(senha, usuarioBuscado.Senha!);
 
+                    if (confere)
+                    {
+                        return usuarioBuscado;
+                    }
+                }
+                return null!;
             }
             catch (Exception)
             {

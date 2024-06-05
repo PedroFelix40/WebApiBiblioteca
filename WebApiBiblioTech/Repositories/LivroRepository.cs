@@ -43,7 +43,21 @@ namespace webapibibliotech.Repositories
         {
             try
             {
-                Livros livroBuscado = _context.Livros.FirstOrDefault(g => g.IDLivro == id)!;
+                Livros livroBuscado = _context.Livros.Select(l => new Livros
+                {
+                    IDLivro = l.IDLivro,
+                    Ano = l.Ano,
+                    ISBN = l.ISBN,
+                    Editora = l.Editora,
+                    Autor = l.Autor,
+                    Capa = l.Capa,
+                    Titulo = l.Titulo,
+
+                    Genero = new Generos
+                    {
+                        TituloGenero = l.Genero!.TituloGenero
+                    }
+                }).FirstOrDefault(g => g.IDLivro == id)!;
 
                 return livroBuscado;
             }
@@ -87,26 +101,11 @@ namespace webapibibliotech.Repositories
             }
         }
 
-        public List<Livros> Listar(Guid id)
+        public List<Livros> Listar()
         {
             try
             {
-                return _context.Livros.ToList();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        public List<Livros> Listar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Livros> ListarMeus(Guid id)
-        {
-            return _context.Livros
+                return _context.Livros
                 .Select(l => new Livros
                 {
                     IDLivro = l.IDLivro,
@@ -121,8 +120,14 @@ namespace webapibibliotech.Repositories
                     {
                         TituloGenero = l.Genero!.TituloGenero
                     }
-                }).Where(l => l.IDLivro == id).ToList();
+                }).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
+
 
     }
 }

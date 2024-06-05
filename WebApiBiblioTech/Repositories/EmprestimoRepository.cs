@@ -22,7 +22,45 @@ namespace webapibibliotech.Repositories
         {
             try
             {
-                return _context.EmprestimosLivro.FirstOrDefault(e => e.IDEmprestimoLivro == id)!;
+                return _context.EmprestimosLivro.Select(e => new EmprestimosLivro
+                {
+                    IDEmprestimoLivro = e.IDEmprestimoLivro,
+                    Situacao = e.Situacao,
+                    DataDevolucao = e.DataDevolucao,
+                    IDUsuario = e.IDUsuario,
+                    Usuario = new Usuarios
+                    {
+                        IdUsuario = e.IDUsuario,
+                        Nome = e.Usuario!.Nome,
+                        Email = e.Usuario.Email,
+                        IDTipoUsuario = e.Usuario!.IDTipoUsuario,
+                        
+                        TipoUsuario = new TiposUsuario
+                        {
+                            TituloTipoUsuario = e.Usuario.TipoUsuario!.TituloTipoUsuario,
+                        }
+                    },
+
+                    IDLivro = e.IDLivro,
+
+                    Livro = new Livros
+                    {
+                        IDLivro = e.IDLivro,
+                        Titulo = e.Livro!.Titulo,
+                        Autor = e.Livro.Autor,
+                        Ano = e.Livro.Ano,
+                        Editora = e.Livro.Editora,
+                        ISBN = e.Livro.ISBN,
+                        Capa = e.Livro.Capa,
+
+                        IDGenero = e.Livro.IDGenero,
+
+                        Genero = new Generos
+                        {
+                            TituloGenero = e.Livro.Genero!.TituloGenero
+                        }
+                    }
+                }).FirstOrDefault(e => e.IDEmprestimoLivro == id)!;
             }
             catch (Exception)
             {
@@ -74,13 +112,21 @@ namespace webapibibliotech.Repositories
                     IDEmprestimoLivro = e.IDEmprestimoLivro,
                     Situacao = e.Situacao,
                     DataDevolucao = e.DataDevolucao,
-
+                    IDUsuario = e.IDUsuario,
                     Usuario = new Usuarios
                     {
                         IdUsuario = e.IDUsuario,
                         Nome = e.Usuario!.Nome,
-                        IDTipoUsuario = e.Usuario!.IDTipoUsuario
+                        Email = e.Usuario.Email,
+                        IDTipoUsuario = e.Usuario!.IDTipoUsuario,
+
+                        TipoUsuario = new TiposUsuario
+                        {
+                            TituloTipoUsuario = e.Usuario.TipoUsuario!.TituloTipoUsuario,
+                        }
                     },
+
+                    IDLivro = e.IDLivro,
 
                     Livro = new Livros
                     {
@@ -91,6 +137,8 @@ namespace webapibibliotech.Repositories
                         Editora = e.Livro.Editora,
                         ISBN = e.Livro.ISBN,
                         Capa = e.Livro.Capa,
+
+                        IDGenero = e.Livro.IDGenero,
 
                         Genero = new Generos
                         {
@@ -108,7 +156,51 @@ namespace webapibibliotech.Repositories
 
         public List<EmprestimosLivro> ListarMeus(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _context.EmprestimosLivro.Select(e => new EmprestimosLivro
+                {
+                    IDEmprestimoLivro = e.IDEmprestimoLivro,
+                    Situacao = e.Situacao,
+                    DataDevolucao = e.DataDevolucao,
+                    IDUsuario = e.IDUsuario,
+                    Usuario = new Usuarios
+                    {
+                        IdUsuario = e.IDUsuario,
+                        Nome = e.Usuario!.Nome,
+                        Email = e.Usuario.Email,
+                        IDTipoUsuario = e.Usuario!.IDTipoUsuario,
+
+                        TipoUsuario = new TiposUsuario
+                        {
+                            TituloTipoUsuario = e.Usuario.TipoUsuario!.TituloTipoUsuario,
+                        }
+                    },
+
+                    Livro = new Livros
+                    {
+                        IDLivro = e.IDLivro,
+                        Titulo = e.Livro!.Titulo,
+                        Autor = e.Livro.Autor,
+                        Ano = e.Livro.Ano,
+                        Editora = e.Livro.Editora,
+                        ISBN = e.Livro.ISBN,
+                        Capa = e.Livro.Capa,
+
+                        IDGenero = e.Livro.IDGenero,
+
+                        Genero = new Generos
+                        {
+                            TituloGenero = e.Livro.Genero!.TituloGenero
+                        }
+                    }
+                }).Where(e => e.IDUsuario == id).ToList();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

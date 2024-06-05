@@ -13,19 +13,6 @@ namespace webapibibliotech.Repositories
         {
             _context = new BiblioTechContext();
         }
-        public Resenhas BuscarPorId(Guid id)
-        {
-            try
-            {
-                Resenhas resenhaBuscada = _context.Resenhas.FirstOrDefault(g => g.IDResenha == id)!;
-
-                return resenhaBuscada;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
 
         public void CadastrarResenha(Resenhas resenha)
         {
@@ -85,7 +72,23 @@ namespace webapibibliotech.Repositories
         {
             try
             {
-                return _context.Resenhas.ToList();
+                return _context.Resenhas
+                 .Select(l => new Resenhas
+                 {
+                     Descricao = l.Descricao,
+                     Exibe = l.Exibe,
+
+                     Usuario = new Usuarios
+                     {
+                         Nome = l.Usuario!.Nome
+                     },
+
+                     Livro = new Livros
+                     {
+                         Titulo = l.Livro!.Titulo,
+                     }
+
+                 }).ToList();
             }
             catch (Exception)
             {

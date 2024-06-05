@@ -28,7 +28,7 @@ namespace webapibibliotech.Domains
 
         [Column(TypeName = "VARCHAR(60)")]
         [Required(ErrorMessage = "O ISBN do livro é obrigatório!")]
-        [StringLength(60, MinimumLength = 10, ErrorMessage = "A senha deve conter entre 5 e 30 caracteres.")]
+        [StringLength(60, MinimumLength = 10, ErrorMessage = "O ISBN deve conter 13 dígitos!")]
         public string? ISBN { get; set; }
 
         public string? Capa { get; set; }
