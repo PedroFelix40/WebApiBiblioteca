@@ -155,3 +155,10 @@ C:\Users\Predo Gabirel\Desktop\WebApiBiblioteca\WebApiBiblioTech\obj\Debug\net7.
 C:\Users\Predo Gabirel\Desktop\WebApiBiblioteca\WebApiBiblioTech\obj\Debug\net7.0\webapibibliotech.genruntimeconfig.cache
 C:\Users\Predo Gabirel\Desktop\WebApiBiblioteca\WebApiBiblioTech\obj\Debug\net7.0\ref\webapibibliotech.dll
 C:\Users\Predo Gabirel\Desktop\WebApiBiblioteca\WebApiBiblioTech\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\MailKit.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\MimeKit.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.Formats.Asn1.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll

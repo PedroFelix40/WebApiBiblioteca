@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\webapibibliotech.csproj": {}
+    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\webapibibliotech.csproj": {
+    "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\webapibibliotech.csproj",
+        "projectUniqueName": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
         "projectName": "webapibibliotech",
-        "projectPath": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\webapibibliotech.csproj",
-        "packagesPath": "C:\\Users\\Predo Gabirel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\obj\\",
+        "projectPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
+        "packagesPath": "C:\\Users\\48746019871\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Predo Gabirel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48746019871\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[4.0.3, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.11, )"
@@ -76,6 +80,10 @@
               "target": "Package",
               "version": "[7.0.11, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -96,6 +104,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.19, 7.0.19]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

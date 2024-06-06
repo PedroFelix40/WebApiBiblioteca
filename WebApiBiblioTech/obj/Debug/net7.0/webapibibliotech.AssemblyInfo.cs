@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webapibibliotech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0b67704268d39b6a337587e93aa545b595c9702")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16558e5cf0494a09d8071dbbe753597fec4e6dee")]
 [assembly: System.Reflection.AssemblyProductAttribute("webapibibliotech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webapibibliotech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

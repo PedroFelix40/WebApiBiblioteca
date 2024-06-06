@@ -6,7 +6,7 @@ namespace webapibibliotech.Interfaces
     {
         void CadastrarResenha(Resenhas resenha);
         void DeletarResenha(Guid id);
-        List<Resenhas> Listar(Guid id);
+        List<Resenhas> ListarComId(Guid id);
         List<Resenhas> ListarCaralho();
     }
 }

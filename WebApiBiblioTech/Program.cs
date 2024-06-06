@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using webapibibliotech.Contexts;
 using webapibibliotech.Interfaces;
 using webapibibliotech.Repositories;
+using webapibibliotech.Utils.Mail;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -91,6 +92,16 @@ builder.Services.AddScoped<IUsuario, UsuarioRepository>();
 builder.Services.AddScoped<IEmprestimo, EmprestimoRepository>();
 builder.Services.AddScoped<ILivro, LivroRepository>();
 builder.Services.AddScoped<IResenha, ResenhaRepository>();
+
+// Injeção de dependencia dos serviços de email
+// Configure EmailSettings
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection(nameof(EmailSettings)));
+
+// Registrando o serviço de e-mail como uma instância transitória, que é criada cada vez que é solicitada
+builder.Services.AddTransient<IEmailService, EmailService>();
+
+builder.Services.AddScoped<EmailSendService>();
+
 
 var app = builder.Build();
 

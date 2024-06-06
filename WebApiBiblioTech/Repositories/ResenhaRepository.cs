@@ -47,27 +47,7 @@ namespace webapibibliotech.Repositories
             }
         }
 
-        public List<Resenhas> Listar(Guid id)
-        {
-            return _context.Resenhas
-                 .Select(l => new Resenhas
-                 {
-                     Descricao = l.Descricao,
-                     Exibe = l.Exibe,
-
-                     Usuario = new Usuarios
-                     {
-                         Nome = l.Usuario!.Nome
-                     },
-
-                     Livro = new Livros
-                     {
-                         Titulo = l.Livro!.Titulo,
-                     }
-
-                 }).Where(l => l.IDResenha == id).ToList();
-        }
-
+    
         public List<Resenhas> ListarCaralho()
         {
             try
@@ -94,6 +74,37 @@ namespace webapibibliotech.Repositories
             {
                 throw;
             }
+        }
+
+        public List<Resenhas> ListarComId(Guid id)
+        {
+            try
+            {
+                return _context.Resenhas
+                 .Select(l => new Resenhas
+                 {
+                     Descricao = l.Descricao,
+                     Exibe = l.Exibe,
+
+                     Usuario = new Usuarios
+                     {
+                         Nome = l.Usuario!.Nome
+                     },
+
+                     
+                     Livro = new Livros
+                     {
+                         //important !
+                         IDLivro = l.Livro!.IDLivro,
+                         Titulo = l.Livro!.Titulo,
+                     }
+
+                 }).Where(l => l.Livro!.IDLivro == id).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }   
         }
     }
 }

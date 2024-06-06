@@ -53,7 +53,7 @@ namespace webapibibliotech.Controllers
         {
             try
             {
-                return Ok(_resenha.Listar(id));
+                return Ok(_resenha.ListarComId(id));
             }
             catch (Exception e)
             {

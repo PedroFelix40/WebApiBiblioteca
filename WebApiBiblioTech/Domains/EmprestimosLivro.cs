@@ -15,7 +15,7 @@ namespace webapibibliotech.Domains
         public string? Situacao { get; set; }
 
         [Column(TypeName = "DATE")]
-        [Required(ErrorMessage = "A data da consulta é obrigatório!")]
+        [Required(ErrorMessage = "A data da consulta é obrigatória!")]
         [DataType(DataType.Date)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataDevolucao { get; set; }
@@ -29,7 +29,7 @@ namespace webapibibliotech.Domains
         public Usuarios? Usuario { get; set; }
 
         //ref Livro
-        [Required(ErrorMessage = "Livro obrigatório!")]
+        [Required(ErrorMessage = "Livro é obrigatório!")]
         public Guid IDLivro { get; set; }
 
         [ForeignKey("IDLivro")]
