@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using webapibibliotech.Contexts;
 using webapibibliotech.Domains;
 using webapibibliotech.Interfaces;
@@ -73,6 +74,21 @@ namespace webapibibliotech.Repositories
 
                 _context.Usuarios.Add(usuario);
 
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void Deletar(Guid id)
+        {
+            try
+            {
+                Usuarios usuariosBuscado = _context.Usuarios.Include(t => t.TipoUsuario).FirstOrDefault(u => u.IdUsuario == id)!;
+                _context.Usuarios.Remove(usuariosBuscado);
                 _context.SaveChanges();
             }
             catch (Exception)

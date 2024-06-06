@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\",
+  "WorkspaceRootPath": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\webapibibliotech\\repositories\\resenharepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\resenharepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\webapibibliotech\\controllers\\resenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:controllers\\resenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\webapibibliotech\\interfaces\\iresenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:interfaces\\iresenha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\webapibiblioteca\\webapibibliotech\\domains\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:domains\\livros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\predo gabirel\\desktop\\webapibiblioteca\\webapibibliotech\\contexts\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:contexts\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ResenhaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Repositories\\ResenhaRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ResenhaRepository.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Repositories\\ResenhaRepository.cs",
-              "RelativeToolTip": "Repositories\\ResenhaRepository.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAgwEMAAAAZAAAA",
+              "Title": "BiblioTechContext.cs",
+              "DocumentMoniker": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\Contexts\\BiblioTechContext.cs",
+              "RelativeDocumentMoniker": "Contexts\\BiblioTechContext.cs",
+              "ToolTip": "C:\\Users\\Predo Gabirel\\Desktop\\WebApiBiblioteca\\WebApiBiblioTech\\Contexts\\BiblioTechContext.cs",
+              "RelativeToolTip": "Contexts\\BiblioTechContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:56:09.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ResenhaController.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Controllers\\ResenhaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ResenhaController.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Controllers\\ResenhaController.cs",
-              "RelativeToolTip": "Controllers\\ResenhaController.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAgwDQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:25:18.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IResenha.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Interfaces\\IResenha.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IResenha.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Interfaces\\IResenha.cs",
-              "RelativeToolTip": "Interfaces\\IResenha.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:50:31.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Livros.cs",
-              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Domains\\Livros.cs",
-              "RelativeDocumentMoniker": "Domains\\Livros.cs",
-              "ToolTip": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\Domains\\Livros.cs",
-              "RelativeToolTip": "Domains\\Livros.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAIAwwB4AAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T19:33:32.022Z",
+              "WhenOpened": "2024-06-06T00:45:31.562Z",
               "EditorCaption": ""
             }
           ]

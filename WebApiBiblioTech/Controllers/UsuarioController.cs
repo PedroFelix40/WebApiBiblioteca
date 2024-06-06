@@ -38,7 +38,12 @@ namespace webapibibliotech.Controllers
             {
                 Usuarios usuarioBuscado = _usuario.BuscarPorId(id);
 
-                return Ok(usuarioBuscado);
+                if (usuarioBuscado != null)
+                {
+                    return Ok(usuarioBuscado);
+                }
+
+                return NotFound("Nada foi encontrado");
             }
             catch (Exception e)
             {
@@ -52,7 +57,29 @@ namespace webapibibliotech.Controllers
             try
             {
                 _usuario.Cadastrar(usuario);
+
                 return Ok(usuario);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(Guid id)
+        {
+            try
+            {
+                Usuarios usuarioBuscado = _usuario.BuscarPorId(id);
+
+                if (usuarioBuscado != null)
+                {
+                    _usuario.Deletar(id);
+
+                    return Ok("O usuário foi deletado!");
+                }
+                return null!;
             }
             catch (Exception e)
             {
@@ -67,12 +94,15 @@ namespace webapibibliotech.Controllers
             {
                 List<Usuarios> ListaUsuario = _usuario.ListarUsuarios();
 
-                return Ok(ListaUsuario);
+                if (ListaUsuario != null)
+                {
+                    return Ok(ListaUsuario);
+                }
+                return NotFound("Não foi encontrado nada!");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                return BadRequest(e.Message);
             }
         }
 

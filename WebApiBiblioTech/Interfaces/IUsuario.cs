@@ -7,6 +7,7 @@ namespace webapibibliotech.Interfaces
         Usuarios BuscarPorEmailESenha(string email, string senha);
         Usuarios BuscarPorId(Guid id);
         void Cadastrar(Usuarios usuario);
+        void Deletar(Guid id);
         List<Usuarios> ListarUsuarios();
     }
 }
