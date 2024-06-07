@@ -9,10 +9,10 @@ using webapibibliotech.Contexts;
 
 #nullable disable
 
-namespace webapibibliotech.Migrations
+namespace WebApiBiblioTech.Migrations
 {
     [DbContext(typeof(BiblioTechContext))]
-    [Migration("20240604173221_BiblioTech")]
+    [Migration("20240607192345_BiblioTech")]
     partial class BiblioTech
     {
         /// <inheritdoc />
@@ -157,9 +157,15 @@ namespace webapibibliotech.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("CodRecupSenha")
+                        .HasColumnType("VARCHAR(60)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("VARCHAR(100)");
+
+                    b.Property<string>("Foto")
+                        .HasColumnType("VARCHAR(60)");
 
                     b.Property<Guid>("IDTipoUsuario")
                         .HasColumnType("uniqueidentifier");

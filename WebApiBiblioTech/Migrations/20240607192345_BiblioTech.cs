@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace webapibibliotech.Migrations
+namespace WebApiBiblioTech.Migrations
 {
     /// <inheritdoc />
     public partial class BiblioTech : Migration
@@ -67,6 +67,8 @@ namespace webapibibliotech.Migrations
                     Nome = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Email = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Senha = table.Column<string>(type: "VARCHAR(60)", maxLength: 60, nullable: false),
+                    Foto = table.Column<string>(type: "VARCHAR(60)", nullable: true),
+                    CodRecupSenha = table.Column<string>(type: "VARCHAR(60)", nullable: true),
                     IDTipoUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>

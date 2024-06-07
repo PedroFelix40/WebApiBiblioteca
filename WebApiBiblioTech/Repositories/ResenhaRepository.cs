@@ -57,15 +57,36 @@ namespace webapibibliotech.Repositories
                  {
                      Descricao = l.Descricao,
                      Exibe = l.Exibe,
+                     IDUsuario = l.IDUsuario,
 
                      Usuario = new Usuarios
                      {
-                         Nome = l.Usuario!.Nome
+                         IdUsuario = l.IDUsuario,
+                         Nome = l.Usuario!.Nome,
+                         Email = l.Usuario.Email,
+                         IDTipoUsuario = l.Usuario!.IDTipoUsuario,
+
+                         TipoUsuario = new TiposUsuario
+                         {
+                             TituloTipoUsuario = l.Usuario.TipoUsuario!.TituloTipoUsuario,
+                         }
                      },
 
                      Livro = new Livros
                      {
                          Titulo = l.Livro!.Titulo,
+                         Autor = l.Livro!.Autor,
+                         Ano = l.Livro!.Ano,
+                         Editora = l.Livro!.Editora,
+                         ISBN = l.Livro!.ISBN,
+                         Capa = l.Livro!.Capa,
+
+                         Genero = new Generos
+                         {
+                             IDGenero = l.Livro.Genero!.IDGenero,
+                             TituloGenero = l.Livro.Genero!.TituloGenero
+                         }
+
                      }
 
                  }).ToList();
@@ -85,21 +106,40 @@ namespace webapibibliotech.Repositories
                  {
                      Descricao = l.Descricao,
                      Exibe = l.Exibe,
+                     IDUsuario = l.IDUsuario,
 
                      Usuario = new Usuarios
                      {
-                         Nome = l.Usuario!.Nome
+                         IdUsuario = l.IDUsuario,
+                         Nome = l.Usuario!.Nome,
+                         Email = l.Usuario.Email,
+                         IDTipoUsuario = l.Usuario!.IDTipoUsuario,
+
+                         TipoUsuario = new TiposUsuario
+                         {
+                             TituloTipoUsuario = l.Usuario.TipoUsuario!.TituloTipoUsuario,
+                         }
                      },
 
-                     
+                     IDLivro = l.IDLivro,
                      Livro = new Livros
                      {
-                         //important !
-                         IDLivro = l.Livro!.IDLivro,
                          Titulo = l.Livro!.Titulo,
+                         Autor = l.Livro!.Autor,
+                         Ano = l.Livro!.Ano,
+                         Editora = l.Livro!.Editora,
+                         ISBN = l.Livro!.ISBN,
+                         Capa = l.Livro!.Capa,
+
+                         Genero = new Generos
+                         {
+                             IDGenero = l.Livro.Genero!.IDGenero,
+                             TituloGenero = l.Livro.Genero!.TituloGenero
+                         }
+
                      }
 
-                 }).Where(l => l.Livro!.IDLivro == id).ToList();
+                 }).Where(l => l.IDLivro == id).ToList();
             }
             catch (Exception)
             {

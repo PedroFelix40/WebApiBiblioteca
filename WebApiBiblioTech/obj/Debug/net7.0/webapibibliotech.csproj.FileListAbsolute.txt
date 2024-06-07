@@ -70,7 +70,6 @@ C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.webapibibliotech.props
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\scopedcss\bundle\webapibibliotech.styles.css
-C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\webapibi.9D92E711.Up2Date
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\webapibibliotech.dll
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\refint\webapibibliotech.dll
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\webapibibliotech.pdb
@@ -162,3 +161,8 @@ C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.Formats.Asn1.dll
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.ClientModel.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\48746019871\Desktop\WebApiBiblioteca\webapibibliotech\obj\Debug\net7.0\webapibi.9D92E711.Up2Date

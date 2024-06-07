@@ -16,6 +16,74 @@ namespace webapibibliotech.Repositories
             _context = new BiblioTechContext();
         }
 
+        public bool AlterarSenha(string email, string senhaNova)
+        {
+            try
+            {
+                var user = _context.Usuarios.FirstOrDefault(x => x.Email == email);
+
+                if (user == null) return false;
+
+                user.Senha = Criptografia.GerarHash(senhaNova);
+
+                _context.Update(user);
+
+                _context.SaveChanges();
+
+                return true;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public void AtualizarFoto(Guid id, string novaUrlFoto)
+        {
+            try
+            {
+                Usuarios usuarioBuscado = _context.Usuarios.FirstOrDefault(x => x.IdUsuario == id)!;
+
+                if (usuarioBuscado != null)
+                {
+                    usuarioBuscado.Foto = novaUrlFoto;
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public Usuarios BuscarPorEmail(string email)
+        {
+            try
+            {
+                return _context.Usuarios.Select(u => new Usuarios
+                {
+                    IdUsuario = u.IdUsuario,
+                    Nome = u.Nome,
+                    Email = u.Email,
+                    Senha = u.Senha,
+
+                    TipoUsuario = new TiposUsuario
+                    {
+                        IDTipoUsuario = u.IDTipoUsuario,
+                        TituloTipoUsuario = u.TipoUsuario!.TituloTipoUsuario
+                    }
+
+                }).FirstOrDefault(u => u.Email == email)!;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public Usuarios BuscarPorEmailESenha(string email, string senha)
         {
             try

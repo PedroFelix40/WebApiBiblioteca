@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using webapibibliotech.Domains;
 using webapibibliotech.Interfaces;
+using webapibibliotech.Repositories;
+using webapibibliotech.ViewModel;
 
 namespace webapibibliotech.Controllers
 {
@@ -17,12 +19,41 @@ namespace webapibibliotech.Controllers
             _usuario = usuario ?? throw new ArgumentNullException(nameof(usuario)); // Validação para conferir se a instância de IGenero é != de null
         }
 
+        [HttpPut("AlterarSenha")]
+        public IActionResult UpdatePassword(string email, AlterarSenhaViewModel senha)
+        {
+            try
+            {
+                _usuario.AlterarSenha(email, senha.SenhaNova!);
+
+                return Ok("Senha alterada com sucesso !");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         [HttpGet("BuscarPorEmailESenha")]
         public IActionResult GetByEmailAndPassword(string email, string senha)
         {
             try
             {
                 return Ok(_usuario.BuscarPorEmailESenha(email, senha));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet("BuscarPorEmail")]
+        public IActionResult GetByEmail(string email)
+        {
+            try
+            {
+                return Ok(_usuario.BuscarPorEmail(email));
             }
             catch (Exception)
             {

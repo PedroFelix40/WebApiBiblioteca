@@ -27,6 +27,13 @@ namespace webapibibliotech.Domains
         public string? Senha { get; set; }
 
 
+        [Column(TypeName = "VARCHAR(60)")]
+        public string? Foto { get; set; }
+
+
+        [Column(TypeName = "VARCHAR(60)")]
+        public int? CodRecupSenha { get; set; }
+
         //referência para a entidade
         [Required(ErrorMessage = "O tipo do usuário é obrigatório!")]
         public Guid IDTipoUsuario { get; set; }
