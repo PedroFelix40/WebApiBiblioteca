@@ -28,6 +28,9 @@ namespace webapibibliotech.Repositories
                     Situacao = e.Situacao,
                     DataDevolucao = e.DataDevolucao,
                     IDUsuario = e.IDUsuario,
+
+                    
+
                     Usuario = new Usuarios
                     {
                         IdUsuario = e.IDUsuario,

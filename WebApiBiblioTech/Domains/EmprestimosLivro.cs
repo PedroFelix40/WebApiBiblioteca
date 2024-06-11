@@ -15,7 +15,7 @@ namespace webapibibliotech.Domains
         public string? Situacao { get; set; }
 
         [Column(TypeName = "DATE")]
-        [Required(ErrorMessage = "A data da consulta é obrigatória!")]
+        [Required(ErrorMessage = "A data da devolução do livro é obrigatória!")]
         [DataType(DataType.Date)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataDevolucao { get; set; }

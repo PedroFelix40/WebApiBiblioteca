@@ -111,6 +111,9 @@ namespace WebApiBiblioTech.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime>("DataComentario")
+                        .HasColumnType("DATE");
+
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("VARCHAR(200)");

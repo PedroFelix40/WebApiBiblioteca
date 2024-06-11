@@ -26,7 +26,7 @@ namespace webapibibliotech.Domains
         [StringLength(60, MinimumLength = 5, ErrorMessage = "A senha deve conter entre 5 e 30 caracteres.")]
         public string? Senha { get; set; }
 
-
+        
         [Column(TypeName = "VARCHAR(60)")]
         public string? Foto { get; set; }
 

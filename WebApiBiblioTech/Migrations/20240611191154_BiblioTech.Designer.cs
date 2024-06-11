@@ -12,7 +12,7 @@ using webapibibliotech.Contexts;
 namespace WebApiBiblioTech.Migrations
 {
     [DbContext(typeof(BiblioTechContext))]
-    [Migration("20240607192345_BiblioTech")]
+    [Migration("20240611191154_BiblioTech")]
     partial class BiblioTech
     {
         /// <inheritdoc />
@@ -113,6 +113,9 @@ namespace WebApiBiblioTech.Migrations
                     b.Property<Guid>("IDResenha")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DataComentario")
+                        .HasColumnType("DATE");
 
                     b.Property<string>("Descricao")
                         .IsRequired()

@@ -49,7 +49,7 @@ namespace webapibibliotech.Controllers
             }
         }
 
-        [HttpDelete("DeletarPorId/{id}")]
+        [HttpDelete("DeletarLivro/{id}")]
         public IActionResult Delete(Guid id)
         {
             try

@@ -47,7 +47,7 @@ namespace webapibibliotech.Controllers
             }
         }
 
-        [HttpDelete("/{id}")]
+        [HttpDelete("Delete/{id}")]
         public IActionResult Delete(Guid id)
         {
             try

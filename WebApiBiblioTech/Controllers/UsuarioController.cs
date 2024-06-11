@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using webapibibliotech.Domains;
 using webapibibliotech.Interfaces;
 using webapibibliotech.Repositories;
+using webapibibliotech.Utils.BlobStorage;
+using webapibibliotech.Utils.Mail;
 using webapibibliotech.ViewModel;
 
 namespace webapibibliotech.Controllers
@@ -13,10 +15,12 @@ namespace webapibibliotech.Controllers
     public class UsuarioController : ControllerBase
     {
         private IUsuario _usuario;
+        private readonly EmailSendService _emailSendService;
 
-        public UsuarioController(IUsuario usuario)
+        public UsuarioController(IUsuario usuario, EmailSendService emailSend)
         {
             _usuario = usuario ?? throw new ArgumentNullException(nameof(usuario)); // Validação para conferir se a instância de IGenero é != de null
+            _emailSendService = emailSend;
         }
 
         [HttpPut("AlterarSenha")]
@@ -83,13 +87,33 @@ namespace webapibibliotech.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(Usuarios usuario)
+        public async Task<IActionResult> Post([FromForm] UsuarioViewModel usuarioModel)
         {
             try
             {
-                _usuario.Cadastrar(usuario);
+                Usuarios user = new Usuarios(); 
+                
+                user.Email = usuarioModel.Email;
+                user.Senha = usuarioModel.Senha;
+                user.Nome = usuarioModel.Nome;
+                user.IDTipoUsuario = usuarioModel.IdTipoUsuario;
+                user.CodRecupSenha = usuarioModel.CodRecupSenha;
 
-                return Ok(usuario);
+                // nome do conteiner e da string de conexao
+                var containerName = "blobbibliotech";
+                var connectionString = "DefaultEndpointsProtocol=https;AccountName=blobbibliotech;AccountKey=flFKNyFFk9mH3TXaCqNlaX0g85mclKktqUp0UJw74yQPd28idikZSvGGgF6TzHCwb5+dEHgoVSuR+ASt+PcmLA==;EndpointSuffix=core.windows.net";
+
+                // Chamar método de upload de imagens
+
+                user.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(usuarioModel.Arquivo!, connectionString, containerName);
+
+               
+
+                _usuario.Cadastrar(user);
+
+                await _emailSendService.SendWelcomeEmail(user.Email!, user.Nome!);     
+
+                return Ok(user);
             }
             catch (Exception e)
             {
@@ -97,7 +121,7 @@ namespace webapibibliotech.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeletarPoId{id}")]
         public IActionResult Delete(Guid id)
         {
             try

@@ -47,7 +47,7 @@ namespace webapibibliotech.Utils.Mail
         {
             // Constrói o conteúdo HTML do e-mail, incluindo o nome do usuário
             string Response = @"
-         <div style=""width:100%; background-color:rgba(96, 191, 197, 1); padding: 20px;"">
+         <div style=""width:100%; background-color:#001B21; padding: 20px;"">
             <div style=""max-width: 600px; margin: 0 auto; background-color:#FFFFFF; border-radius: 10px; padding: 20px;"">
                 <img src=""https://blobbibliotech.blob.core.windows.net/blobbibliotech/LOGO.png"" alt="" Logotipo da Aplicação"" style="" display: block; margin: 0 auto; max-width: 200px;"" />
                 <h1 style=""color: #333333; text-align: center;"">Bem-vindo ao BiblioTech!</h1>

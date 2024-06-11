@@ -18,6 +18,12 @@ namespace webapibibliotech.Domains
         [Required]
         public bool Exibe { get; set; }
 
+        [Column(TypeName = "DATE")]
+        [Required(ErrorMessage = "A data do comentário é obrigatória!")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
+        public DateTime DataComentario { get; set; }
+
         // ref Usuário
         [Required(ErrorMessage = "Usuário obrigatório!")]
         public Guid IDUsuario { get; set; }

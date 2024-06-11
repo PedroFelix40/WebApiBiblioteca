@@ -56,7 +56,7 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDGenero,
                         principalTable: "Generos",
                         principalColumn: "IDGenero",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -79,7 +79,7 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDTipoUsuario,
                         principalTable: "TiposUsuario",
                         principalColumn: "IDTipoUsuario",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -100,13 +100,13 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDLivro,
                         principalTable: "Livros",
                         principalColumn: "IDLivro",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_EmprestimosLivro_Usuarios_IDUsuario",
                         column: x => x.IDUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "IdUsuario",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -116,6 +116,7 @@ namespace WebApiBiblioTech.Migrations
                     IDResenha = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Descricao = table.Column<string>(type: "VARCHAR(200)", nullable: false),
                     Exibe = table.Column<bool>(type: "BIT", nullable: false),
+                    DataComentario = table.Column<DateTime>(type: "DATE", nullable: false),
                     IDUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     IDLivro = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -127,13 +128,13 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDLivro,
                         principalTable: "Livros",
                         principalColumn: "IDLivro",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                     table.ForeignKey(
                         name: "FK_Resenhas_Usuarios_IDUsuario",
                         column: x => x.IDUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "IdUsuario",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateIndex(

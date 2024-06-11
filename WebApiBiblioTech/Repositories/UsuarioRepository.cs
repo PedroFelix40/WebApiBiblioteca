@@ -68,6 +68,7 @@ namespace webapibibliotech.Repositories
                     Nome = u.Nome,
                     Email = u.Email,
                     Senha = u.Senha,
+                    CodRecupSenha = u.CodRecupSenha,
 
                     TipoUsuario = new TiposUsuario
                     {
@@ -94,6 +95,7 @@ namespace webapibibliotech.Repositories
                     Nome = u.Nome,
                     Email = u.Email,
                     Senha = u.Senha,
+                    CodRecupSenha = u.CodRecupSenha,
 
                     TipoUsuario = new TiposUsuario
                     {
@@ -176,6 +178,7 @@ namespace webapibibliotech.Repositories
                     Nome = u.Nome,
                     Email = u.Email,
                     Senha = u.Senha,
+                    CodRecupSenha = u.CodRecupSenha,
 
                     TipoUsuario = new TiposUsuario
                     {
