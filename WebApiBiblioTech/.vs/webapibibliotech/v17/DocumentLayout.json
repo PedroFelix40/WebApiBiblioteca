@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\domains\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:domains\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\contexts\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:contexts\\bibliotechcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Domains\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Domains\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Domains\\Usuarios.cs",
+              "RelativeToolTip": "Domains\\Usuarios.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T20:06:12.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\ViewModel\\UsuarioViewModel.cs",
+              "RelativeToolTip": "ViewModel\\UsuarioViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:24:36.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAG4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T19:04:07.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAADwv7MAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T18:54:51.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BiblioTechContext.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Contexts\\BiblioTechContext.cs",
+              "RelativeDocumentMoniker": "Contexts\\BiblioTechContext.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Contexts\\BiblioTechContext.cs",
+              "RelativeToolTip": "Contexts\\BiblioTechContext.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCAAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T18:16:32.279Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

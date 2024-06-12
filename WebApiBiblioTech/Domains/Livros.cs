@@ -35,7 +35,8 @@ namespace webapibibliotech.Domains
         [Required(ErrorMessage = "O Situacao do livro é obrigatória!")]
         public string? SituacaoLivro { get; set; }
 
-
+        [Column(TypeName = "VARCHAR(60)")]
+        [Required(ErrorMessage = "A capa do livro é obrigatória!")]
         public string? Capa { get; set; }
 
         // FK

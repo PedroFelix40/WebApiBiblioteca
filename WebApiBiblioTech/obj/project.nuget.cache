@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L/Hhr3jhHYc=",
+  "dgSpecHash": "ZtZ7Q4D8QtQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\48746019871\\Desktop\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
+  "projectFilePath": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\webapibibliotech.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\48746019871\\.nuget\\packages\\azure.core\\1.39.0\\azure.core.1.39.0.nupkg.sha512",
     "C:\\Users\\48746019871\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

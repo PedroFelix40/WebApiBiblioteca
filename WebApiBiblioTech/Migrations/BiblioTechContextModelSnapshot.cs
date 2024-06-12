@@ -80,7 +80,8 @@ namespace WebApiBiblioTech.Migrations
                         .HasColumnType("VARCHAR(60)");
 
                     b.Property<string>("Capa")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(60)");
 
                     b.Property<string>("Editora")
                         .IsRequired()
@@ -92,6 +93,10 @@ namespace WebApiBiblioTech.Migrations
                     b.Property<string>("ISBN")
                         .IsRequired()
                         .HasMaxLength(60)
+                        .HasColumnType("VARCHAR(60)");
+
+                    b.Property<string>("SituacaoLivro")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(60)");
 
                     b.Property<string>("Titulo")
@@ -165,7 +170,7 @@ namespace WebApiBiblioTech.Migrations
                         .HasColumnType("VARCHAR(100)");
 
                     b.Property<string>("Foto")
-                        .HasColumnType("VARCHAR(60)");
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<Guid>("IDTipoUsuario")
                         .HasColumnType("uniqueidentifier");

@@ -148,7 +148,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -178,6 +177,7 @@ namespace webapibibliotech.Repositories
                     Nome = u.Nome,
                     Email = u.Email,
                     Senha = u.Senha,
+                    Foto = u.Foto,
                     CodRecupSenha = u.CodRecupSenha,
 
                     TipoUsuario = new TiposUsuario

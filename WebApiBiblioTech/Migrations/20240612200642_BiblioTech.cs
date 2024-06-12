@@ -45,7 +45,8 @@ namespace WebApiBiblioTech.Migrations
                     Ano = table.Column<string>(type: "VARCHAR(60)", nullable: false),
                     Editora = table.Column<string>(type: "VARCHAR(60)", nullable: false),
                     ISBN = table.Column<string>(type: "VARCHAR(60)", maxLength: 60, nullable: false),
-                    Capa = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SituacaoLivro = table.Column<string>(type: "VARCHAR(60)", nullable: false),
+                    Capa = table.Column<string>(type: "VARCHAR(60)", nullable: false),
                     IDGenero = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
@@ -56,7 +57,7 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDGenero,
                         principalTable: "Generos",
                         principalColumn: "IDGenero",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -67,7 +68,7 @@ namespace WebApiBiblioTech.Migrations
                     Nome = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Email = table.Column<string>(type: "VARCHAR(100)", nullable: false),
                     Senha = table.Column<string>(type: "VARCHAR(60)", maxLength: 60, nullable: false),
-                    Foto = table.Column<string>(type: "VARCHAR(60)", nullable: true),
+                    Foto = table.Column<string>(type: "VARCHAR(200)", nullable: true),
                     CodRecupSenha = table.Column<string>(type: "VARCHAR(60)", nullable: true),
                     IDTipoUsuario = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
@@ -79,7 +80,7 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDTipoUsuario,
                         principalTable: "TiposUsuario",
                         principalColumn: "IDTipoUsuario",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -100,13 +101,13 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDLivro,
                         principalTable: "Livros",
                         principalColumn: "IDLivro",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_EmprestimosLivro_Usuarios_IDUsuario",
                         column: x => x.IDUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "IdUsuario",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -128,13 +129,13 @@ namespace WebApiBiblioTech.Migrations
                         column: x => x.IDLivro,
                         principalTable: "Livros",
                         principalColumn: "IDLivro",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Resenhas_Usuarios_IDUsuario",
                         column: x => x.IDUsuario,
                         principalTable: "Usuarios",
                         principalColumn: "IdUsuario",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

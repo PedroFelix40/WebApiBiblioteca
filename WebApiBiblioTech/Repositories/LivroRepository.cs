@@ -111,6 +111,7 @@ namespace webapibibliotech.Repositories
                     IDLivro = l.IDLivro,
                     Ano = l.Ano,
                     ISBN = l.ISBN,
+                    SituacaoLivro = l.SituacaoLivro,
                     Editora = l.Editora,
                     Autor = l.Autor,
                     Capa = l.Capa,

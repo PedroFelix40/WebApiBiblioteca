@@ -86,6 +86,7 @@ namespace webapibibliotech.Controllers
             }
         }
 
+        
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] UsuarioViewModel usuarioModel)
         {
@@ -105,9 +106,9 @@ namespace webapibibliotech.Controllers
 
                 // Chamar método de upload de imagens
 
-                user.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(usuarioModel.Arquivo!, connectionString, containerName);
+                var url = await AzureBlobStorageHelper.UploadImageBlobAsync(usuarioModel.Arquivo!, connectionString, containerName);
 
-               
+                user.Foto = url;
 
                 _usuario.Cadastrar(user);
 
@@ -117,9 +118,27 @@ namespace webapibibliotech.Controllers
             }
             catch (Exception e)
             {
+                return BadRequest($"Erro: {e.Message} - Tipo de Exceção: {e.GetType().ToString()}");
+            }
+        } 
+        /*
+
+        [HttpPost]
+        public IActionResult Post(Usuarios user)
+        {
+            try
+            {
+                _usuario.Cadastrar(user);
+
+                return Ok("Usuario Cadastrado!");
+            }
+            catch (Exception e)
+            {
                 return BadRequest(e.Message);
             }
         }
+        */
+        
 
         [HttpDelete("DeletarPoId{id}")]
         public IActionResult Delete(Guid id)

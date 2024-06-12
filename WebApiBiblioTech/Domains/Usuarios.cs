@@ -27,7 +27,7 @@ namespace webapibibliotech.Domains
         public string? Senha { get; set; }
 
         
-        [Column(TypeName = "VARCHAR(60)")]
+        [Column(TypeName = "VARCHAR(200)")]
         public string? Foto { get; set; }
 
 
