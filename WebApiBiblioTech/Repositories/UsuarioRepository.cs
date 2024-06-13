@@ -80,7 +80,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -89,7 +88,7 @@ namespace webapibibliotech.Repositories
         {
             try
             {
-                Usuarios usuarioBuscado = _context.Usuarios.Select(u => new Usuarios 
+                Usuarios usuarioBuscado = _context.Usuarios.Select(u => new Usuarios
                 {
                     IdUsuario = u.IdUsuario,
                     Nome = u.Nome,
@@ -118,7 +117,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -131,7 +129,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -162,7 +159,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -171,7 +167,7 @@ namespace webapibibliotech.Repositories
         {
             try
             {
-                return _context.Usuarios.Select( u =>  new Usuarios 
+                return _context.Usuarios.Select(u => new Usuarios
                 {
                     IdUsuario = u.IdUsuario,
                     Nome = u.Nome,
@@ -189,7 +185,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

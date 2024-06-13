@@ -11,15 +11,15 @@ namespace webapibibliotech.Domains
         public Guid IDLivro { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "O titulo do livro é obrigatória!")]
+        [Required(ErrorMessage = "O titulo do livro é obrigatório!")]
         public string? Titulo { get; set; }
 
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "O autor do livro é obrigatória!")]
+        [Required(ErrorMessage = "O autor do livro é obrigatório!")]
         public string? Autor { get; set; }
 
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "O ano do livro é obrigatória!")]
+        [Required(ErrorMessage = "O ano do livro é obrigatório!")]
         public string? Ano { get; set; }
 
         [Column(TypeName = "VARCHAR(60)")]
@@ -32,14 +32,13 @@ namespace webapibibliotech.Domains
         public string? ISBN { get; set; }
 
         [Column(TypeName = "VARCHAR(60)")]
-        [Required(ErrorMessage = "O Situacao do livro é obrigatória!")]
+        [Required(ErrorMessage = "A Situação do livro é obrigatória!")]
         public string? SituacaoLivro { get; set; }
 
-        [Column(TypeName = "VARCHAR(60)")]
+        [Column(TypeName = "VARCHAR(200)")]
         [Required(ErrorMessage = "A capa do livro é obrigatória!")]
         public string? Capa { get; set; }
 
-        // FK
         [Required(ErrorMessage = "O gênero do livro é obrigatório!")]
         public Guid IDGenero { get; set; }
 

@@ -24,16 +24,13 @@ namespace webapibibliotech.Domains
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataComentario { get; set; }
 
-        // ref Usuário
-        [Required(ErrorMessage = "Usuário obrigatório!")]
+        [Required(ErrorMessage = "Usuário é obrigatório!")]
         public Guid IDUsuario { get; set; }
 
         [ForeignKey("IDUsuario")]
         public Usuarios? Usuario { get; set; }
 
-
-        //ref Livro
-        [Required(ErrorMessage = "Livro obrigatório!")]
+        [Required(ErrorMessage = "Livro é obrigatório!")]
         public Guid IDLivro { get; set; }
 
         [ForeignKey("IDLivro")]

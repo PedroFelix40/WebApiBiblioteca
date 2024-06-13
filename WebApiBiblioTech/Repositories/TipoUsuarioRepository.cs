@@ -22,7 +22,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -37,7 +36,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -52,7 +50,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

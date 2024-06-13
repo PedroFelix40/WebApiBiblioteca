@@ -13,7 +13,7 @@ namespace webapibibliotech.Controllers
 
         public TipoUsuarioController(ITipoUsuario tipoUsuario)
         {
-            _tipoUsuario = tipoUsuario ?? throw new ArgumentNullException(nameof(tipoUsuario)); // Validação para conferir se a instância de IGenero é != de null
+            _tipoUsuario = tipoUsuario ?? throw new ArgumentNullException(nameof(tipoUsuario)); 
         }
 
 

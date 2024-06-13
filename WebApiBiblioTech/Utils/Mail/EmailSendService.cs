@@ -10,7 +10,6 @@ namespace webapibibliotech.Utils.Mail
             emailService = service;
         }
 
-        // Método para envio de email de boas vindas
         public async Task SendWelcomeEmail(string email, string userName)
         {
             try
@@ -55,7 +54,6 @@ namespace webapibibliotech.Utils.Mail
 
         private string GetHtmlContent(string userName)
         {
-            // Constrói o conteúdo HTML do e-mail, incluindo o nome do usuário
             string Response = @"
          <div style=""width:100%; background-color:rgba(96, 191, 197, 1); padding: 20px;"">
             <div style=""max-width: 600px; margin: 0 auto; background-color:#FFFFFF; border-radius: 10px; padding: 20px;"">
@@ -70,7 +68,6 @@ namespace webapibibliotech.Utils.Mail
             </div>
         </div>";
 
-            // Retorna o conteúdo HTML do e-mail
             return Response;
         }
 

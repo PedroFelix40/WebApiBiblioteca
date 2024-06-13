@@ -15,7 +15,7 @@ namespace webapibibliotech.Controllers
         // Injeção
         public ResenhaController(IResenha resenha)
         {
-            _resenha = resenha ?? throw new ArgumentNullException(nameof(resenha)); // validação para conferir se a instância de IGenero é != de null
+            _resenha = resenha ?? throw new ArgumentNullException(nameof(resenha)); 
         }
 
         [HttpPost]

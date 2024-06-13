@@ -21,17 +21,13 @@ namespace webapibibliotech.Utils.Mail
         {
             try
             {
-                // Cria objeto para receber os dados do e-mail a ser enviado
                 MailRequest mailRequest = new MailRequest();
 
-                // Define o endereço e assunto
                 mailRequest.ToEmail = email;
                 mailRequest.Subject = "Olá, esse é um email vindo da turma de DEV";
 
-                // Toda parte visual do Email(corpo do email)
                 mailRequest.Body = GetHtmlContent(userName);
 
-                // Chama o método que enviará o email
                 await emailService.SendEmailAsync(mailRequest);
 
                 return Ok("Email enviado com sucesso");
@@ -45,7 +41,6 @@ namespace webapibibliotech.Utils.Mail
 
         private string GetHtmlContent(string userName)
         {
-            // Constrói o conteúdo HTML do e-mail, incluindo o nome do usuário
             string Response = @"
          <div style=""width:100%; background-color:#001B21; padding: 20px;"">
             <div style=""max-width: 600px; margin: 0 auto; background-color:#FFFFFF; border-radius: 10px; padding: 20px;"">
@@ -60,7 +55,6 @@ namespace webapibibliotech.Utils.Mail
             </div>
         </div>";
 
-            // Retorna o conteúdo HTML do e-mail
             return Response;
         }
     }

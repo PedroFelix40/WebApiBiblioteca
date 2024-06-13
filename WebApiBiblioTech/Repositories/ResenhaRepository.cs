@@ -23,7 +23,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

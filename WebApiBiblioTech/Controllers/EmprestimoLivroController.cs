@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using webapibibliotech.Domains;
 using webapibibliotech.Interfaces;
+using webapibibliotech.ViewModel;
 
 namespace webapibibliotech.Controllers
 {
@@ -14,7 +15,7 @@ namespace webapibibliotech.Controllers
 
         public EmprestimoLivroController(IEmprestimo emprestimo)
         {
-            _emprestimo = emprestimo ?? throw new ArgumentNullException(nameof(emprestimo)); // validação para conferir se a instância de IGenero é != de null
+            _emprestimo = emprestimo ?? throw new ArgumentNullException(nameof(emprestimo));
         }
 
         [HttpGet("BuscarPorId/{id}")]
@@ -87,6 +88,24 @@ namespace webapibibliotech.Controllers
             catch (Exception e)
             {
                 return BadRequest(e.Message);
+            }
+        }
+
+        [HttpPut("AtualizarStatus")]
+        public IActionResult Put(Guid id, EmprestimoStatusViewModel eViewModel )
+        {
+            try
+            {
+
+                var emprestimo = eViewModel.Situacao;
+                _emprestimo.AtualizarEmprestimo(id, emprestimo);
+
+                return Ok("Atualizado");
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
         

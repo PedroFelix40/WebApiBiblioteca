@@ -12,13 +12,11 @@ namespace webapibibliotech.Controllers
     {
         private IGenero _genero;
 
-        // Injeção
         public GeneroController(IGenero genero)
         {
-            _genero = genero ?? throw new ArgumentNullException(nameof(genero)); // validação para conferir se a instância de IGenero é != de null
+            _genero = genero ?? throw new ArgumentNullException(nameof(genero)); 
         }
 
-        // Métodos"
 
         [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetById(Guid id)

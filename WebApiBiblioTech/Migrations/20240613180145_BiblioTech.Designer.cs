@@ -12,7 +12,7 @@ using webapibibliotech.Contexts;
 namespace WebApiBiblioTech.Migrations
 {
     [DbContext(typeof(BiblioTechContext))]
-    [Migration("20240612200642_BiblioTech")]
+    [Migration("20240613180145_BiblioTech")]
     partial class BiblioTech
     {
         /// <inheritdoc />
@@ -84,7 +84,7 @@ namespace WebApiBiblioTech.Migrations
 
                     b.Property<string>("Capa")
                         .IsRequired()
-                        .HasColumnType("VARCHAR(60)");
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<string>("Editora")
                         .IsRequired()

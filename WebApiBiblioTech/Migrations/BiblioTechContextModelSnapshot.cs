@@ -81,7 +81,7 @@ namespace WebApiBiblioTech.Migrations
 
                     b.Property<string>("Capa")
                         .IsRequired()
-                        .HasColumnType("VARCHAR(60)");
+                        .HasColumnType("VARCHAR(200)");
 
                     b.Property<string>("Editora")
                         .IsRequired()

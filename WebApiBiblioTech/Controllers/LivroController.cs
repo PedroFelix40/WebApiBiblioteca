@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using webapibibliotech.Domains;
 using webapibibliotech.Interfaces;
+using webapibibliotech.Utils.BlobStorage;
+using webapibibliotech.ViewModel;
 
 namespace webapibibliotech.Controllers
 {
@@ -12,13 +14,11 @@ namespace webapibibliotech.Controllers
     {
         private ILivro _livro;
 
-        // Injeção
         public LivroController(ILivro livro)
         {
-            _livro = livro ?? throw new ArgumentNullException(nameof(livro)); // validação para conferir se a instância de IGenero é != de null
+            _livro = livro ?? throw new ArgumentNullException(nameof(livro)); 
         }
 
-        // Métodos
 
         [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetActionResult(Guid id)
@@ -34,14 +34,31 @@ namespace webapibibliotech.Controllers
         }
 
         [HttpPost("CadastrarLivros")]
-        public IActionResult Post(Livros livro)
+        public async Task<IActionResult> Post([FromForm] LivroViewModel livroModel)
         {
-
             try
             {
-                _livro.Cadastrar(livro);
+                Livros book = new Livros();
 
-                return Ok(livro);
+
+                book.Titulo = livroModel.Titulo;
+                book.Autor = livroModel.Autor;
+                book.Ano = livroModel.Ano;
+                book.Editora = livroModel.Editora;
+                book.ISBN = livroModel.ISBN;
+                book.SituacaoLivro = livroModel.SituacaoLivro;
+
+                book.IDGenero = livroModel.IDGenero;
+
+                var containerName = "blobbibliotech";
+                var connectionString = "DefaultEndpointsProtocol=https;AccountName=blobbibliotech;AccountKey=flFKNyFFk9mH3TXaCqNlaX0g85mclKktqUp0UJw74yQPd28idikZSvGGgF6TzHCwb5+dEHgoVSuR+ASt+PcmLA==;EndpointSuffix=core.windows.net";
+
+
+                book.Capa = await AzureBlobStorageHelper.UploadImageBlobAsync(livroModel.Arquivo!, connectionString, containerName);
+
+                _livro.Cadastrar(book);
+
+                return Ok(book);
             }
             catch (Exception e)
             {
@@ -89,7 +106,39 @@ namespace webapibibliotech.Controllers
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("AtualizarStatus")]
+        public IActionResult Put(Guid id, LivroStatusViewModel lViewModel)
+        {
+            try
+            {
+
+                var SituacaoLivro = lViewModel.SituacaoLivro;
+                _livro.AtualizarLivro(id, SituacaoLivro);
+
+                return Ok("Atualizado");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+        [HttpGet("ListarLivrosPorGenero")]
+        public IActionResult GetByGenero(Guid idGenero)
+        {
+            try
+            {
+                return Ok(_livro.ListarPorGenero(idGenero));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPut("Atualizar{id}")]
         public IActionResult Put(Guid id, Livros livro)
         {
             try
@@ -103,6 +152,8 @@ namespace webapibibliotech.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+
 
 
     }

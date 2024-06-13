@@ -18,6 +18,28 @@ namespace webapibibliotech.Repositories
             throw new NotImplementedException();
         }
 
+        public void AtualizarEmprestimo(Guid id, string status)
+        {
+            try
+            {
+                EmprestimosLivro emprestimos = _context.EmprestimosLivro.Find(id)!;
+
+                if (emprestimos != null)
+                {
+                    emprestimos.Situacao = status;
+                }
+
+                _context.EmprestimosLivro.Update(emprestimos!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public EmprestimosLivro BuscarPorId(Guid id)
         {
             try
@@ -67,7 +89,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -87,7 +108,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -101,7 +121,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -152,7 +171,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -201,7 +219,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

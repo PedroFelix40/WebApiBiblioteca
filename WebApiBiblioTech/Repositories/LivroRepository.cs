@@ -39,6 +39,28 @@ namespace webapibibliotech.Repositories
             }
         }
 
+        public void AtualizarLivro(Guid id, string situacaoLivro)
+        {
+            try
+            {
+                Livros situacaoL = _context.Livros.Find(id)!;
+
+                if (situacaoL != null)
+                {
+                    situacaoL.SituacaoLivro = situacaoLivro;
+                }
+
+                _context.Livros.Update(situacaoL!);
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public Livros BuscarPorId(Guid id)
         {
             try
@@ -52,6 +74,7 @@ namespace webapibibliotech.Repositories
                     Autor = l.Autor,
                     Capa = l.Capa,
                     Titulo = l.Titulo,
+                    SituacaoLivro = l.SituacaoLivro,
 
                     Genero = new Generos
                     {
@@ -63,7 +86,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -77,7 +99,6 @@ namespace webapibibliotech.Repositories
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -117,8 +138,10 @@ namespace webapibibliotech.Repositories
                     Capa = l.Capa,
                     Titulo = l.Titulo,
 
+                    IDGenero = l.IDGenero,
                     Genero = new Generos
                     {
+                        IDGenero = l.Genero!.IDGenero,
                         TituloGenero = l.Genero!.TituloGenero
                     }
                 }).ToList();
@@ -129,6 +152,34 @@ namespace webapibibliotech.Repositories
             }
         }
 
+        public List<Livros> ListarPorGenero(Guid idGenero)
+        {
+            try
+            {
+                return _context.Livros
+                .Select(l => new Livros
+                {
+                    IDLivro = l.IDLivro,
+                    Ano = l.Ano,
+                    ISBN = l.ISBN,
+                    SituacaoLivro = l.SituacaoLivro,
+                    Editora = l.Editora,
+                    Autor = l.Autor,
+                    Capa = l.Capa,
+                    Titulo = l.Titulo,
 
+                    IDGenero = l.IDGenero,
+                    Genero = new Generos
+                    {
+                        IDGenero = l.Genero!.IDGenero,
+                        TituloGenero = l.Genero!.TituloGenero
+                    }
+                }).Where(l => l.IDGenero == idGenero).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

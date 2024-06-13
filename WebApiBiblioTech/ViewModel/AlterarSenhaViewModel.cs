@@ -7,5 +7,4 @@ namespace webapibibliotech.ViewModel
         [Required(ErrorMessage = "Informe a nova senha do usuário")]
         public string? SenhaNova { get; set; }
     }
-
 }

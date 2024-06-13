@@ -19,7 +19,7 @@ namespace webapibibliotech.Controllers
 
         public UsuarioController(IUsuario usuario, EmailSendService emailSend)
         {
-            _usuario = usuario ?? throw new ArgumentNullException(nameof(usuario)); // Validação para conferir se a instância de IGenero é != de null
+            _usuario = usuario ?? throw new ArgumentNullException(nameof(usuario)); 
             _emailSendService = emailSend;
         }
 
@@ -37,6 +37,41 @@ namespace webapibibliotech.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpPut("AlterarFotoPerfil")]
+        public async Task<IActionResult> UpdateProfileImage(Guid id, [FromForm] UsuarioFotoViewModel fotoModel)
+        {
+            try
+            {
+
+                Usuarios usuarioBuscado = _usuario.BuscarPorId(id);
+
+
+                if (usuarioBuscado == null)
+                {
+                    return NotFound();
+                }
+
+
+                var connectionString = "DefaultEndpointsProtocol=https;AccountName=blobbibliotech;AccountKey=flFKNyFFk9mH3TXaCqNlaX0g85mclKktqUp0UJw74yQPd28idikZSvGGgF6TzHCwb5+dEHgoVSuR+ASt+PcmLA==;EndpointSuffix=core.windows.net";
+
+                var containerName = "blobbibliotech";
+
+                string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(fotoModel.Arquivo!, connectionString!, containerName!);
+
+
+                usuarioBuscado.Foto = fotoUrl;
+
+                _usuario.AtualizarFoto(id, fotoUrl);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
         [HttpGet("BuscarPorEmailESenha")]
         public IActionResult GetByEmailAndPassword(string email, string senha)
@@ -86,14 +121,14 @@ namespace webapibibliotech.Controllers
             }
         }
 
-        
+
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] UsuarioViewModel usuarioModel)
         {
             try
             {
-                Usuarios user = new Usuarios(); 
-                
+                Usuarios user = new Usuarios();
+
                 user.Email = usuarioModel.Email;
                 user.Senha = usuarioModel.Senha;
                 user.Nome = usuarioModel.Nome;
@@ -106,13 +141,13 @@ namespace webapibibliotech.Controllers
 
                 // Chamar método de upload de imagens
 
-                var url = await AzureBlobStorageHelper.UploadImageBlobAsync(usuarioModel.Arquivo!, connectionString, containerName);
+                user.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(usuarioModel.Arquivo!, connectionString, containerName);
 
-                user.Foto = url;
+
 
                 _usuario.Cadastrar(user);
 
-                await _emailSendService.SendWelcomeEmail(user.Email!, user.Nome!);     
+                await _emailSendService.SendWelcomeEmail(user.Email!, user.Nome!);
 
                 return Ok(user);
             }
@@ -120,25 +155,10 @@ namespace webapibibliotech.Controllers
             {
                 return BadRequest($"Erro: {e.Message} - Tipo de Exceção: {e.GetType().ToString()}");
             }
-        } 
-        /*
-
-        [HttpPost]
-        public IActionResult Post(Usuarios user)
-        {
-            try
-            {
-                _usuario.Cadastrar(user);
-
-                return Ok("Usuario Cadastrado!");
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
         }
-        */
-        
+
+
+
 
         [HttpDelete("DeletarPoId{id}")]
         public IActionResult Delete(Guid id)
