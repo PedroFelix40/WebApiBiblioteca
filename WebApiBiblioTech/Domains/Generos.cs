@@ -10,7 +10,7 @@ namespace webapibibliotech.Domains
         public Guid IDGenero { get; set; } = Guid.NewGuid();
 
         [Column(TypeName = "VARCHAR(100)")]
-        [Required(ErrorMessage = "Genero é obrigatório!")]
+        [Required(ErrorMessage = "Gênero é obrigatório!")]
         public string? TituloGenero { get; set; }
     }
 }

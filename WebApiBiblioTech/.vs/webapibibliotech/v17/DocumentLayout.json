@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\resenharepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\resenharepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\emprestimorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\emprestimorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\controllers\\emprestimolivrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:controllers\\emprestimolivrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\livrorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\repositories\\emprestimorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:repositories\\emprestimorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|solutionrelative:controllers\\livrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D1EEC52-08AF-49E8-A836-E5FCFD733871}|webapibibliotech.csproj|c:\\users\\48746019871\\desktop\\nova pasta\\webapibiblioteca\\webapibibliotech\\interfaces\\iemprestimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IEmprestimo.cs",
               "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Interfaces\\IEmprestimo.cs",
               "RelativeDocumentMoniker": "Interfaces\\IEmprestimo.cs",
@@ -43,12 +47,24 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T19:02:34.471Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResenhaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\ResenhaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ResenhaRepository.cs",
+              "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\ResenhaRepository.cs",
+              "RelativeToolTip": "Repositories\\ResenhaRepository.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAUwFMAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T19:28:23.671Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "LivroController.cs",
               "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Controllers\\LivroController.cs",
               "RelativeDocumentMoniker": "Controllers\\LivroController.cs",
@@ -61,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LivroRepository.cs",
               "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\LivroRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\LivroRepository.cs",
@@ -75,26 +91,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmprestimoLivroController.cs",
               "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Controllers\\EmprestimoLivroController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmprestimoLivroController.cs",
               "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Controllers\\EmprestimoLivroController.cs",
               "RelativeToolTip": "Controllers\\EmprestimoLivroController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAwGYAAAAlAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAowGsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T19:10:57.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "EmprestimoRepository.cs",
               "DocumentMoniker": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\EmprestimoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EmprestimoRepository.cs",
               "ToolTip": "C:\\Users\\48746019871\\Desktop\\Nova pasta\\WebApiBiblioteca\\webapibibliotech\\Repositories\\EmprestimoRepository.cs",
               "RelativeToolTip": "Repositories\\EmprestimoRepository.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAqwBwAAAAxAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAkwA8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T19:04:00.923Z",
               "EditorCaption": ""

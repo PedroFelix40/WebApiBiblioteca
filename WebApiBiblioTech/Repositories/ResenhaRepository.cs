@@ -71,15 +71,19 @@ namespace webapibibliotech.Repositories
                          }
                      },
 
+                     IDLivro = l.IDLivro,
                      Livro = new Livros
                      {
+                         IDLivro = l.Livro!.IDLivro,
                          Titulo = l.Livro!.Titulo,
                          Autor = l.Livro!.Autor,
                          Ano = l.Livro!.Ano,
                          Editora = l.Livro!.Editora,
                          ISBN = l.Livro!.ISBN,
                          Capa = l.Livro!.Capa,
+                         SituacaoLivro = l.Livro!.SituacaoLivro,
 
+                         IDGenero = l.Livro!.IDGenero,
                          Genero = new Generos
                          {
                              IDGenero = l.Livro.Genero!.IDGenero,

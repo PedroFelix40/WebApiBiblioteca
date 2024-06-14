@@ -40,7 +40,7 @@ namespace webapibibliotech.Controllers
             {
                 _resenha.DeletarResenha(id);
 
-                return Ok("Resenha excluida com sucesso!");
+                return Ok("Resenha excluída com sucesso!");
             }
             catch (Exception e)
             {

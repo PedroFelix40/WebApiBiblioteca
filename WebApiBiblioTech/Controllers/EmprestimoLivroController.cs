@@ -55,7 +55,7 @@ namespace webapibibliotech.Controllers
             {
                 _emprestimo.Deletar(id);
 
-                return Ok("Emprestimo deletado");
+                return Ok("Empréstimo deletado!");
             }
             catch (Exception e)
             {
@@ -100,7 +100,7 @@ namespace webapibibliotech.Controllers
                 var emprestimo = eViewModel.Situacao;
                 _emprestimo.AtualizarEmprestimo(id, emprestimo);
 
-                return Ok("Atualizado");
+                return Ok("Atualizado!");
             }
             catch (Exception)
             {

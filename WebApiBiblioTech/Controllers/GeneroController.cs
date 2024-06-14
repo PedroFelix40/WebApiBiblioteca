@@ -59,11 +59,11 @@ namespace webapibibliotech.Controllers
                 {
                     _genero.DeletarGenero(id);
 
-                    return Ok("O genero foi deletado");
+                    return Ok("O gênero foi deletado!");
                 }
                 else
                 {
-                    return NotFound("Não foi encontrado nenhum gênero com esse ID");
+                    return NotFound("Não foi encontrado nenhum gênero com esse ID!");
                 }
 
             }

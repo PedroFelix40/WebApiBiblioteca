@@ -31,7 +31,7 @@ namespace webapibibliotech.Controllers
                 }
                 else
                 {
-                    return NotFound("Tipo de usuario não encontrado, confira o Id");
+                    return NotFound("Tipo de usuário não encontrado, confira o ID!");
                 }
 
             }
@@ -71,7 +71,7 @@ namespace webapibibliotech.Controllers
                 }
                 else
                 {
-                    return NotFound("tipoUsuario não foi encontrado, confirao Id");
+                    return NotFound("Tipo de usuário não foi encontrado, confirao ID!");
                 }
             }
             catch (Exception e)

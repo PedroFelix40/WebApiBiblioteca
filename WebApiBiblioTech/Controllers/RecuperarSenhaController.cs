@@ -40,7 +40,7 @@ namespace webapibibliotech.Controllers
 
                 await _emailSendingService.SendRecovery(user.Email!, recoveryCode);
 
-                return Ok("Codigo gerado com sucesso!");
+                return Ok("Código gerado com sucesso!");
 
             }
             catch (Exception ex)

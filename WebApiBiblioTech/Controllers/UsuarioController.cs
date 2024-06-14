@@ -30,7 +30,7 @@ namespace webapibibliotech.Controllers
             {
                 _usuario.AlterarSenha(email, senha.SenhaNova!);
 
-                return Ok("Senha alterada com sucesso !");
+                return Ok("Senha alterada com sucesso!");
             }
             catch (Exception ex)
             {
@@ -113,7 +113,7 @@ namespace webapibibliotech.Controllers
                     return Ok(usuarioBuscado);
                 }
 
-                return NotFound("Nada foi encontrado");
+                return NotFound("Usuário não foi encontrado!");
             }
             catch (Exception e)
             {
@@ -156,9 +156,6 @@ namespace webapibibliotech.Controllers
                 return BadRequest($"Erro: {e.Message} - Tipo de Exceção: {e.GetType().ToString()}");
             }
         }
-
-
-
 
         [HttpDelete("DeletarPoId{id}")]
         public IActionResult Delete(Guid id)
