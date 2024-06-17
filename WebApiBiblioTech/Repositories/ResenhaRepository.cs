@@ -57,6 +57,7 @@ namespace webapibibliotech.Repositories
                      Descricao = l.Descricao,
                      Exibe = l.Exibe,
                      IDUsuario = l.IDUsuario,
+                     DataComentario = l.DataComentario,
 
                      Usuario = new Usuarios
                      {
@@ -64,6 +65,7 @@ namespace webapibibliotech.Repositories
                          Nome = l.Usuario!.Nome,
                          Email = l.Usuario.Email,
                          IDTipoUsuario = l.Usuario!.IDTipoUsuario,
+                         Foto = l.Usuario!.Foto,
 
                          TipoUsuario = new TiposUsuario
                          {
@@ -110,6 +112,7 @@ namespace webapibibliotech.Repositories
                      Descricao = l.Descricao,
                      Exibe = l.Exibe,
                      IDUsuario = l.IDUsuario,
+                     DataComentario = l.DataComentario,
 
                      Usuario = new Usuarios
                      {
